@@ -11,13 +11,12 @@
 void MainMenuState::Init()
 {
 	std::cout << "Initializing MainMenu State" << std::endl;
-	// Load the textures and assign them to a string
 	
+	// Load the textures and fonts and assign them to a string
 	_data->assets.LoadTexture("Menu Game Title", GAME_TITLE_FILEPATH);
 	_data->assets.LoadTexture("Cursor Button", CURSOR_BUTTON_FILEPATH);
-
-	// Set the loaded textures to the class members of MainMenuState
 	
+	// Set the loaded textures and fonts to the class members of MainMenuState
 	_title.setTexture(this->_data->assets.GetTexture("Menu Game Title"));
 	_playButton.setTexture(this->_data->assets.GetTexture("Cursor Button"));
 
@@ -58,7 +57,7 @@ void MainMenuState::Update(float dt)
 
 void MainMenuState::Draw(float dt)
 {
-	_data->window.clear();
+	_data->window.clear(sf::Color::White);
 	_data->window.draw(_background);
 	_data->window.draw(_title);
 	_data->window.draw(_playButton);

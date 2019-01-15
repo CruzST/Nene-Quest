@@ -22,5 +22,7 @@ private:
 	sf::Sprite _title;
 	sf::Sprite _playButton;
 	sf::Sprite _background;
+	sf::Text _onePlayer;
+	sf::Text _twoPlayer;
 };
 

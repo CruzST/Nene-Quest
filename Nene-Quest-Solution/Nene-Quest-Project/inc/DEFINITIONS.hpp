@@ -8,18 +8,19 @@
 // How long to show logo in seconds
 #define SPLASH_STATE_SHOW_TIME 3.0
 
-
 // Loaction path of background logo for splash state
 #define SPLASH_SCREEN_BACKGROUND_FILEPATH "Resources/img/Splash Title.png"
-
-// main menu background
-#define MAIN_MENU_BACKGROUND_FILEPATH "Resources/res/sky.png"
 
 // menu cursor button
 #define CURSOR_BUTTON_FILEPATH "Resources/img/Main Menu Cursor.png"
 
 // Main menu title
 #define GAME_TITLE_FILEPATH "Resources/img/Main Menu Title.png"
+
+// font for menu
+#define MAIN_MENU_FONT "Resources/fonts/JapanSans100.ttf"
+
+
 
 // game background
 #define GAME_BACKGROUND_FILEPATH "Resources/res/sky.png"
@@ -46,9 +47,6 @@
 #define BIRD_FRAME_2_FILEPATH "Resources/res/bird-02.png"
 #define BIRD_FRAME_3_FILEPATH "Resources/res/bird-03.png"
 #define BIRD_FRAME_4_FILEPATH "Resources/res/bird-04.png"
-
-// font for score
-#define FLAPPY_FONT_FILEPATH "Resources/fonts/FlappyFont.ttf"
 
 // bird animation rate in sec
 #define BIRD_ANIMATION_DURATION 0.4f

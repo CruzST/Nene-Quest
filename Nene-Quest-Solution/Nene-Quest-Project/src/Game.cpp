@@ -22,13 +22,13 @@ Game::Game(int width, int height, std::string title)
 	this->Run();
 
 
-	// for testing
-	/*
-	std::cout << "TESTING GAME CPP" << std::endl;
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
-	while (this->_data->window.isOpen())
-	{
+		// for testing
+		/*
+		std::cout << "TESTING GAME CPP" << std::endl;
+		sf::CircleShape shape(100.f);
+		shape.setFillColor(sf::Color::Green);
+		while (this->_data->window.isOpen())
+		{
 		sf::Event event;
 		while (this->_data->window.pollEvent(event))
 		{
@@ -36,12 +36,17 @@ Game::Game(int width, int height, std::string title)
 				this->_data->window.close();
 		}
 
+		std::cout << "drawing shape" << std::endl;
+		sf::RectangleShape windowBackground(sf::Vector2f(100.0f, 100.0f));
+		
+
 		this->_data->window.clear();
 		this->_data->window.draw(shape);
+		this->_data->window.draw(windowBackground);
 		this->_data->window.display();
-	}
-
-	*/
+		}
+		*/
+	
 }
 
 
